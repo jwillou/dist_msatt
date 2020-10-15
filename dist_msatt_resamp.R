@@ -1,4 +1,4 @@
-setwd("~/Desktop/")
+setwd("~/Documents/Projects/pupfish/dist_msatt//")
 library(scales)
 
 ####setup####
