@@ -1,4 +1,4 @@
-setwd("~/Documents/Projects/pupfish/dist_msatt//")
+setwd("~/Documents/Projects/pupfish/dist_msatt/")
 library(scales)
 
 ####setup####
@@ -39,7 +39,7 @@ abline(modelout)
 dev.off()
 
 ####linear model with permutations - less than 100 Kbp####
-spdata = pdata[pdata$dist<=100,,drop=F]
+spdata = pdata[pdata$dist<=50,,drop=F]
 modelout = lm(ho~dist+pop, data=spdata)
 summary(modelout)
 
